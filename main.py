@@ -21,12 +21,12 @@ while answer == 'y':
     B = float(input("Enter the value of B: "))
     C = float(input("Enter the value of C: "))
     if discriminant(A, B, C) > 0:  # checks to see if the equation has distinct real roots
-        x1 = str(quadratic_formula(A, B, C)[0])
-        x2 = str(quadratic_formula(A, B, C)[1])
+        x1 = str(quadratic_formula(A, B, C)[0])  # gets the first output of the quadratic formula tuple
+        x2 = str(quadratic_formula(A, B, C)[1])  # gets the second output of the quadratic formula tuple
         print("The general solution for the recurrence relation is: S(k) = c₁(" + x1 + ")ᵏ", "+ c₂(" + x2 + ")ᵏ")
     elif discriminant(A, B, C) == 0:  # checks to see if the equation has repeated real roots
-        x1 = str(quadratic_formula(A, B, C)[0])
-        x2 = str(quadratic_formula(A, B, C)[1])
+        x1 = str(quadratic_formula(A, B, C)[0])  # gets the first output of the quadratic formula tuple
+        x2 = str(quadratic_formula(A, B, C)[1])  # gets the second output of the quadratic formula tuple
         print("The general solution for the recurrence relation is: S(k) = c₁(" + x1 + ")ᵏ", "+ c₂k(" + x2 + ")ᵏ")
     else:  # the discriminant is negative and the equation has complex roots
         print("The recurrence relation has complex roots.")
